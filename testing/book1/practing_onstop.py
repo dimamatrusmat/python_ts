@@ -55,24 +55,43 @@
 #     f.write('\ndsadd')
 #
 # #########################
-class Test:
-    def __init__(self):
-        self.foo = 11
-        self._bar = 23
-        self.__baz = 23
+# class Test:
+#     def __init__(self):
+#         self.foo = 11
+#         self._bar = 23
+#         self.__baz = 23
+#
+#
+# class ExtendedTest(Test):
+#     def __init__(self):
+#         super().__init__()
+#         self.foo = 'переопределено'
+#         self._bar = 'переопределено'
+#         self.__baz = 'переопределено'
+#
+#
+# t = Test()
+# t2 = ExtendedTest()
+#
+# print(dir(t2))
+# t._Test__baz = 1
+# print(t._Test__baz)
 
+##########################
 
-class ExtendedTest(Test):
-    def __init__(self):
-        super().__init__()
-        self.foo = 'переопределено'
-        self._bar = 'переопределено'
-        self.__baz = 'переопределено'
+# errno = 50159747054
+# name = "Bob"
+# print("Hello %s, это ошибка 0x%x" % (name, errno))
+# print("Hello %(name)s!, это ошибка 0x%(errno)x!" % {"name": name, 'errno': errno})
+# print(f"Hi, {name}! This is error 0x{errno:x}!".format(name=name, errno=errno))
 
+###################
 
-t = Test()
-t2 = ExtendedTest()
+def bak(text):
+    return text.upper() + "!"
 
-print(dir(t2))
-t._Test__baz = 1
-print(t._Test__baz)
+print(bak("tetetete"))
+
+park = bak
+
+print(park("fffff"))
