@@ -55,4 +55,24 @@
 #     f.write('\ndsadd')
 #
 # #########################
+class Test:
+    def __init__(self):
+        self.foo = 11
+        self._bar = 23
+        self.__baz = 23
 
+
+class ExtendedTest(Test):
+    def __init__(self):
+        super().__init__()
+        self.foo = 'переопределено'
+        self._bar = 'переопределено'
+        self.__baz = 'переопределено'
+
+
+t = Test()
+t2 = ExtendedTest()
+
+print(dir(t2))
+t._Test__baz = 1
+print(t._Test__baz)
