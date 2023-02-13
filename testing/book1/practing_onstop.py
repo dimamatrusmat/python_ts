@@ -8,4 +8,14 @@
 #
 # print(apply_discount(shoes, 2.0))
 
+##################################
+# This is False example
+names = ['Apa', "Yra", "Kate"]
 
+# This is True example
+names = [
+    'Apa',
+    'Yra',
+    'Kate',
+]
+##################################
