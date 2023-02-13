@@ -87,11 +87,11 @@
 
 ###################
 
-def bak(text):
-    return text.upper() + "!"
-
-print(bak("tetetete"))
-
-park = bak
-
-print(park("fffff"))
+    # def bak(text):
+    #     return text.upper() + "!"
+    #
+    # print(bak("tetetete"))
+    #
+    # park = bak
+    #
+    # print(park("fffff"))
