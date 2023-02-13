@@ -1,12 +1,18 @@
-body {
-    width: 100%;
-    height: 100vh;
-    background: violet;
+.changer {
     background-image: url('../img/world-curr.jpg');
+}
+
+.mainblock {
+     width: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.fio {
+    background-image: url('../img/world-fio.jpg');
 }
 
 .container {
