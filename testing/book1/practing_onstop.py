@@ -121,5 +121,67 @@
 # print(x)
 # w = plus_5(4)
 # print(w)
+##############################
+# def null_decorator(func):
+#     return func
+#
+#
+# def greet():
+#     return 'Hello!'
+#
+#
+# greet = null_decorator(greet)
+#
+#
+# print(greet())
+
+#########################
+
+# def null_decorator(func):
+#     return func
+#
+# @null_decorator
+# def greet():
+#     return "hello"
+#
+# a = greet()
+# print(a)
+
+# def uppercase(func):
+#     def wrapper():
+#         original_result = func()
+#         modifield_result = original_result.upper()
+#
+#         return modifield_result
+#
+#     return wrapper
+#
+#
+# @uppercase
+# def greet():
+#     return "hello"
+#
+#
+# print(greet())
 
 
+def strong(func):
+    def wrapper():
+        return '<strong>' + func() + '</strong>'
+
+    return wrapper
+
+
+def body(func):
+    def wrapper():
+        return '<' + "body" + '>' + func() + '</' + "body" + '>'
+
+    return wrapper
+
+@body
+@strong
+def start():
+    return "Staing"
+
+
+print(start())
