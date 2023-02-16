@@ -87,11 +87,39 @@
 
 ###################
 
-    # def bak(text):
-    #     return text.upper() + "!"
-    #
-    # print(bak("tetetete"))
-    #
-    # park = bak
-    #
-    # print(park("fffff"))
+# def bak(text):
+#     return text.upper() + "!"
+#
+# print(bak("tetetete"))
+#
+# park = bak
+#
+# print(park("fffff"))
+
+#######################
+
+# class Faible:
+#
+#     def __init__(self, doc, gil):
+#         self.seil = doc
+#         self.gil = gil
+#
+
+
+#######################
+
+# add = lambda x, y: x + y
+#
+# print(add(4, 5))
+
+# def make_adder(n):
+#     return lambda x: x + n
+#
+# plus_3 = make_adder(3)
+# plus_5 = make_adder(5)
+# x = plus_3(4)
+# print(x)
+# w = plus_5(4)
+# print(w)
+
+
