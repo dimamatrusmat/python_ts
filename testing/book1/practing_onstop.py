@@ -165,23 +165,69 @@
 # print(greet())
 
 
-def strong(func):
-    def wrapper():
-        return '<strong>' + func() + '</strong>'
+# def strong(func):
+#     def wrapper():
+#         return '<strong>' + func() + '</strong>'
+#
+#     return wrapper
+#
+#
+# def body(func):
+#     def wrapper():
+#         return '<' + "body" + '>' + func() + '</' + "body" + '>'
+#
+#     return wrapper
+#
+# @body
+# @strong
+# def start():
+#     return "Staing"
+#
 
-    return wrapper
 
 
-def body(func):
-    def wrapper():
-        return '<' + "body" + '>' + func() + '</' + "body" + '>'
+#
+# print(start())
+#############################
+# import functools
+#
+#
+# def proxy(func):
+#     def wrapper(*args, **kwargs):
+#         return func(*args, **kwargs)
+#
+#     return wrapper
+#
+#
+# def trace(func):
+#     @functools.wraps(func)
+#     def wrapper(*args, **kwargs):
+#         print(f'Trassirovka: call {func.__name__}() '
+#               f'c {args}, {kwargs}')
+#
+#         original_result = func(*args, **kwargs)
+#
+#         print(f'Trassirovka: {func.__name__}() '
+#               f'return {original_result!r}')
+#
+#         return original_result
+#
+#     return wrapper
+#
+#
+# @trace
+# def say(name, line):
+#     """Return Say"""
+#     return f'{name}: {line}'
+#
+#
+# print(say("Jeny", "Hello"))
+# print(say.__name__)
+#
+#################
 
-    return wrapper
-
-@body
-@strong
-def start():
-    return "Staing"
 
 
-print(start())
+
+
+
